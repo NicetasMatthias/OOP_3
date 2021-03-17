@@ -10,10 +10,15 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    interface.cpp
+    interface.cpp \
+    polinom.cpp \
+    trational.cpp
 
 HEADERS += \
-    interface.h
+    interface.h \
+    number.h \
+    polinom.h \
+    trational.h
 
 FORMS += \
     interface.ui
@@ -22,3 +27,5 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES +=
