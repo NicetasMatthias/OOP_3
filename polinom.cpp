@@ -99,16 +99,16 @@ std::string polinom::canon()
         ss << std::showpos << polinom::a << "*(x" << -rts[0] << ")^2";
         break;
     case 3:
-        ss << "The polynomial has no real roots";
+        ss << "У полинома нет вещественных корней";
         break;
     case 4:
-        ss << "The roots of the polynomial are not rational";
+        ss << "Корни полинома не рациональные";
         break;
     case 5:
-        ss << "One of the roots of the polynomial is not rational";
+        ss << "Один из корней полинома не рациональный";
         break;
     default:
-        ss << "Unknown error while calculating roots";
+        ss << "Неизвестная ошибка при вычислении корней";
         break;
     }
     return ss.str();

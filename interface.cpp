@@ -56,16 +56,16 @@ void Interface::on_pushButton_calc_clicked()
         ss << "x1,x2 = " << tmp[0] << std::endl;
         break;
     case 3:
-        ss << "The polynomial has no real roots" << std :: endl;
+        ss << "У полинома нет вещественных корней" << std :: endl;
         break;
     case 4:
-        ss << "Polynomial roots are not rational" << std :: endl;
+        ss << "Корни полинома не рациональные" << std :: endl;
         break;
     case 5:
-        ss << "x1 = " << tmp[0] << ",x2 not rational";
+        ss << "x1 = " << tmp[0] << ",x2 не рациональный";
         break;
     default:
-        ss << "Unknown error while calculating roots" << std::endl;
+        ss << "Неизвестная ошибка при вычислении корней" << std::endl;
         break;
     }
     ui->lineEdit_roots->setText(QString::fromStdString(ss.str()));
